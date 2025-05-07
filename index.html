@@ -8,7 +8,8 @@
   </head>
   <style>
     body {
-      background-color: wheat;
+      background-color: white;
+      margin: 0;
     }
 
     nav {
@@ -17,14 +18,15 @@
     }
 
     ul {
-      background-color: darkgreen;
-      width: 97%;
+      background-color: #94b988;
       list-style-type: none;
-      border-radius: 5px;
-      height: 100px;
+      border-radius: 2px;
+      height: 180px;
       margin: 1px;
-      padding: 14px;
+      padding: 0px;
       text-align: center;
+      display: flex;
+      justify-content: space-around;
     }
 
     ul li {
@@ -32,31 +34,63 @@
     }
 
     ul li a {
+      font-family: "Roboto", sans-serif;
       text-decoration: none;
-      color: aliceblue;
+      color: black;
       text-align: center;
       font-size: 3em;
-      font-weight: bold;
-      font-size: 50px;
-      padding: 45px;
+      font-size: 26px;
+      line-height: 150px;
+      font-weight: 300;
+    }
+
+    #pages-apart-from-main {
+      display: flex;
+      float: right;
+      margin-right: -20px;
     }
 
     /*styling/CSS so i can hover over my navbar (Light Mode)*/
     nav ul li :hover {
       color: #4a4a4a;
+      transition: all;
     }
     html {
       width: 100%;
     }
+
+    #Home-page-link {
+      font-size: 120px;
+      font-weight: 500;
+      float: left;
+    }
+
+    #image-of-naawai-oodena {
+      background-image: url(https://lpband.ca/wp-content/uploads/2022/12/Kapyong-Barracks-Draft-Master-Plan_Page_008-2.png);
+      background-repeat: no-repeat;
+      background-size: 1540px 750px;
+    }
   </style>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="second-page.html">About</a></li>
-        <li><a href="third-page.html">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a id="Home-page-link" href="index.html">Naawi-Oodena</a></li>
+          <li><a id="pages-apart-from-main" href="index.html">Home</a></li>
+          <li>
+            <a id="pages-apart-from-main" href="second-page.html">About</a>
+          </li>
+          <li>
+            <a id="pages-apart-from-main" href="third-page.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <br />
+      <img
+        id="image-of-naawai-oodena"
+        src="Images/former-kapyong-barracks-master-plan.avif"
+        alt="" />
+    </header>
     <main>
       <p style="font-size: 100px"></p>
     </main>
