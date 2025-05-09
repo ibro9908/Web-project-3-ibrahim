@@ -1,6 +1,5 @@
 nav {
-  width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
@@ -40,29 +39,17 @@ nav ul li :hover {
 body {
   background-color: white;
   margin: 0;
+  width: 100%;
+  height: 647.7777777777777px;
 }
 
 #section-of-image {
   background-image: url(https://images.trvl-media.com/media/content/shared/images/travelguides/Bridgewater-7049-desktopRetina.jpg);
   background-size: 100% 960px;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 647.7777777777777px;
-  position: fixed;
-  top: 100px;
+  position: sticky;
 }
 
 html {
   width: 100%;
-}
-
-.text-areas {
-  background-color: rgb(43, 59, 43);
-  border-radius: 5px;
-  width: 1300px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  margin-left: 8%;
-  opacity: 80%;
 }
